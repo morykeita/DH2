@@ -64,10 +64,8 @@ function updateProfile() {
 			$("#firstName").text("First Name: "+ $("#editFirstName").val());
 			$("#lastName").text("Last Name: "+ $("#editLastName").val());
 			$("#userName").text("Username: "+ $("#editUserName").val());
-			$("#pwd").text("Password: "+ $("#editPassword").val());
 			$("#currEmail").text("Email: "+ $("#editEmail").val());
 			$("#phoneP").text("Phone#: "+ $("#editPhone").val());
-			
 		}
 	});
 
