@@ -61,8 +61,13 @@ function updateProfile() {
 			console.log("Ajax error please submit again");
 		},
 		complete : function(status) {
-			console.log("done settings: "+($("#phoneP").text()));
+			$("#firstName").text("First Name: "+ $("#editFirstName").val());
+			$("#lastName").text("Last Name: "+ $("#editLastName").val());
+			$("#userName").text("Username: "+ $("#editUserName").val());
+			$("#pwd").text("Password: "+ $("#editPassword").val());
+			$("#currEmail").text("Email: "+ $("#editEmail").val());
 			$("#phoneP").text("Phone#: "+ $("#editPhone").val());
+			
 		}
 	});
 
