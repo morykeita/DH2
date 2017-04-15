@@ -1278,7 +1278,7 @@ function checkIfFilterSel(element){
                 <p id='firstName'>First Name: <c:out value="${sessionScope.currentUser.getFirstName()}"/></p>
                     <p id='lastName'>Last Name: <c:out value="${sessionScope.currentUser.getLastName()}"/></p>
                     <p id='userName'>Username: <c:out value="${sessionScope.currentUser.getUserName()}"/></p>
-                    <p id='pwd'>Password: <c:out value="${sessionScope.currentUser.getPassword()}"/></p>
+                    <p id='pwd'>Password: <c:out value="********"/></p>
                     <p id="currEmail">Email: <c:out value="${sessionScope.currentUser.getEmail()}"/></p>
                     <p id='phoneP'>Phone#: <c:out value="${sessionScope.currentUser.getPhone()}"/></p><br />
                     <p id="currRole" display="none" hidden><c:out value="${sessionScope.currentUser.getRoles().getRole()}"/></p>
