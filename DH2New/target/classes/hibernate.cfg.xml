@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Conviguration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	<property name="hibernate.connection.username">team1</property>
+		<property name="hibernate.connection.password">revature</property>	
+		
+		<!--  Url -->
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@devhubrds.cawkgknwy2yq.us-east-1.rds.amazonaws.com:1521:ORCL</property>
+		
+		<!-- Driver -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	
+		<!-- Type of DB Dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+   		<mapping class="com.dhub.beans.Users"/>
+   		<mapping class="com.dhub.beans.Roles"/>
+		<mapping class="com.dhub.beans.Projects"/>
+		<mapping class="com.dhub.beans.Products"/>
+		<mapping class="com.dhub.beans.Meetings"/>
+		<mapping class="com.dhub.beans.Status"/>
+		<mapping class="com.dhub.beans.UserStats"/>
+		<mapping class="com.dhub.beans.Filters"/>
+		<mapping class="com.dhub.beans.FilterSubtypes"/>
+		<!-- <mapping class="com.dhub.beans.FilterSubtypes"/> -->
+	</session-factory>
+</hibernate-configuration>
