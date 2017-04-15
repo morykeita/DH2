@@ -394,7 +394,7 @@ $("#ClearFilter").click(function(){
 	});*/
 	
 	$("#AddNewOp").click(function(){
-		$(".list-group").append($('<li>',{class:"list-group-item",id:countOp}));
+		$(".list-group").append($('<li>',{'class':"list-group-item",id:countOp}));
 
 		var ele = $("#"+countOp);
 		ele.append('<div class="input-group">'+
@@ -570,6 +570,8 @@ $("#ClearFilter").click(function(){
             	      var checkEle = $("#filters").find("#"+key);
             	      console.log("Check if filter already on ui : "+checkEle.length);
             	      if(checkEle.length == 0){
+            	    	  
+            	      console.log("ADDING")
             	    	  addFilter(key,val);
             	      }
             	      
@@ -913,7 +915,7 @@ function checkIfFilterSel(element){
 						<li><a href="#">Account</a></li>
 						<li><a href="#">Dashboard</a></li>
 						<li class="nav-divider"></li>
-						<li><a href="#">Logout</a></li>
+						<li><a href="http://localhost:8089/DH2New/testLogin.jsp">Logout</a></li>
 					</ul>
 				</li>
 
